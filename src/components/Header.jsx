@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon, EmailIcon } from '@chakra-ui/icons';
 import { Link as RouterLink } from 'react-router-dom';
-import HeaderIcons from './HeaderIcons';  // Importamos el nuevo componente
+import HeaderIcons from './HeaderIcons';
 
 export default function Header() {
   const { toggleColorMode, colorMode } = useColorMode();
@@ -22,14 +22,14 @@ export default function Header() {
       <Flex 
         as="nav" 
         p="20px" 
-        justifyContent={{ base: 'center', lg: 'space-between' }} 
+        justifyContent={{ base: 'center', lg: 'space-around' }} 
         alignItems="center"
         width='100%' 
         position="fixed" 
         backdropFilter='blur(10px)' 
         zIndex={10}
         flexWrap="wrap"
-        display={{ base: 'none', lg: 'flex' }}  // Mostrar solo en pantallas grandes
+        display={{ base: 'none', lg: 'flex' }} 
       >
         <Box display={{ base: 'none', lg: 'block' }} width='200px'></Box>
         <Breadcrumb>
@@ -49,12 +49,12 @@ export default function Header() {
         </Breadcrumb>
         <ButtonGroup width={{ base: '100%', lg: '150px' }} justifyContent={{ base: 'center', lg: 'flex-end' }}>
           <IconButton
-            fontSize='20px'
-            variant="ghost"
-            aria-label="Toggle Dark/Light Mode"
-            colorScheme='blue'
-            onClick={toggleColorMode}
-            icon={colorMode === "dark" ? <SunIcon boxSize={6} /> : <MoonIcon boxSize={6} />}
+              fontSize='20px'
+              variant="ghost"
+              aria-label="Toggle Dark/Light Mode"
+              colorScheme='blue'
+              onClick={toggleColorMode}
+              icon={colorMode === "light" ? <MoonIcon boxSize={6} /> : <SunIcon boxSize={6} />}
           />   
           <Button 
             as="a"

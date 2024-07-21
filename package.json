@@ -14,6 +14,9 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@fontsource/staatliches": "^5.0.20",
+    "@fontsource/yeseva-one": "^5.0.20",
+    "@fontsource-variable/comfortaa": "^5.0.20",
     "formik": "^2.4.6",
     "framer-motion": "^10.16.5",
     "react": "^18.2.0",
@@ -29,6 +32,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.1.1",
     "vite": "^4.5.3"
   }
 }
