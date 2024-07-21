@@ -11,12 +11,12 @@ export default function Avatar() {
       p='1px' 
       rounded='lg' 
       bg="transparent" 
-      position={{ base: 'relative', md: 'relative' }} 
-      top={{ base: '0', md: '10px' }} 
+      position={{ base: 'relative', md: 'fixed' }} 
+      top={{ base: '0px', sm: '0', md: '80px' }} // top es 0 para sm y base, 10px para md
       left={{ base: '0', md: '60px' }} 
       zIndex={2}
       mx={{ base: 'auto', md: '0' }} 
-      mt={{ base: '0', md: '0' }}  
+      mt={{ base: 4, sm: 2, md: 0 }}  // margin-top es 2 para sm
     >
       <CardHeader p={1}>
         <Flex alignItems='center'>
