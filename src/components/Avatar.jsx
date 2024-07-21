@@ -11,9 +11,9 @@ export default function Avatar() {
       p='1px' 
       rounded='lg' 
       bg="transparent" 
-      position={{ base: 'relative', md: 'fixed' }} 
-      top={{ base: '0', md: '40px' }} 
-      left={{ base: '0', md: '100px', lg: '150px' }} 
+      position={{ base: 'relative', md: 'relative' }} 
+      top={{ base: '0', md: '10px' }} 
+      left={{ base: '0', md: '60px' }} 
       zIndex={2}
       mx={{ base: 'auto', md: '0' }} 
       mt={{ base: '0', md: '0' }}  
