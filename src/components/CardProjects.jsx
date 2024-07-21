@@ -4,7 +4,7 @@ import { Image } from "@chakra-ui/react";
 
 export default function CardProjects({source,reference,bd,bd2}) {
     return (
-        <Card maxW="md" maxH="sm">
+        <Card maxW="sm" maxH="sm">
             <CardBody>
                  <Image
                     src={source}

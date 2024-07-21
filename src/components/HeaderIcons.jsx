@@ -15,7 +15,7 @@ export default function HeaderIcons() {
       bg="transparent"
       py={3}
       zIndex={10}
-      display={{ base: 'block', lg: 'none' }}  // Mostrar solo en pantallas pequeñas y medianas
+      display={{ base: 'block', lg: 'none' }} 
     >
       <ButtonGroup spacing={4} justifyContent="center" width="100%">
         <IconButton

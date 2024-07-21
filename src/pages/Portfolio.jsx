@@ -6,7 +6,7 @@ import CardProjects from "../components/CardProjects";
 
 export default function Portfolio() {
   return (
-    <Box p={4} boxShadow="lg" borderRadius="md">
+    <Box boxShadow="lg" borderRadius="md">
       <Headline title="Portfolio" />
       <TitlePages title="Check out my featured projects" />
       <Flex 
@@ -16,7 +16,7 @@ export default function Portfolio() {
         gap={4}
       >
         <CardProjects
-          source="https://drive.google.com/file/d/1tpH7XKtdi2jivIj2ibvgkd6VxVrWx2mj/view?usp=drive_link"
+          source="./Portfolio.png"
           reference="https://github.com/MichellePerezS/automataWeb"
           bd="ReactJS"
           bd2="ChackraUI"
