@@ -7,11 +7,11 @@ export default function Layout({ children }) {
     <Flex direction="column" minH="100vh">
       <Header />
       
-      <Flex flexGrow={1} p={5} mt={{ base: "120px", md: "80px" }} flexDirection={{ base: "column", md: "row" }}>
-        <Box flexShrink={0} mr={{ base: 0, md: 5 }} mb={{ base: 5, md: 0 }}>
+      <Flex flexWrap={'wrap'} p={5} mt={{ base: "120px", md: "80px" }} justifyContent={'center'}>
+        <Box flexShrink={0} flexGrow={0} flexBasis="400px"  mr={{ base: 0, md: 5 }} mb={{ base: 5, md: 0 }}>
           <Avatar />
         </Box>
-        <Box p={5} boxShadow="lg" borderRadius="md" width="100%" maxWidth="1000px" ml="auto">
+        <Box flexShrink={0} flexGrow={1} flexBasis="700px" p={25} boxShadow="lg" borderRadius="md"   ml="auto">
           {children}
         </Box>
       </Flex>
