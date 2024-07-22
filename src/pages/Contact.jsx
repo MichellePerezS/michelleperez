@@ -8,15 +8,19 @@ import {
   Textarea,
   VStack,
   FormErrorMessage,
+  useToast,
 } from '@chakra-ui/react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import Headline from "../components/Headline";
 import TitlePages from "../components/TitlePages";
+import { sendEmail } from '../services/email';
 
 export default function Contact() {
+  const toast = useToast();
+
   return (
-    <Box p={4} boxShadow="lg" borderRadius="md">
+    <Box p={4} boxShadow="lg" borderRadius="md" maxW="600px" mx="auto">
       <Headline title="Contact" />
       <TitlePages title="Let's Work Together" />
       <Formik
@@ -28,8 +32,37 @@ export default function Contact() {
           message: Yup.string().required('Required'),
         })}
         onSubmit={(values, actions) => {
-          console.log(values);
-          actions.setSubmitting(false);
+          const templateParams = {
+            from_name: values.name,
+            from_email: values.email,
+            subject: values.subject,
+            message: values.message,
+          };
+
+          sendEmail(templateParams)
+            .then((response) => {
+              console.log('Email successfully sent!', response.status, response.text);
+              toast({
+                title: "Mensaje enviado correctamente.",
+                description: "Gracias por contactarme, me pondré en contacto contigo pronto.",
+                status: "success",
+                duration: 5000,
+                isClosable: true,
+              });
+              actions.resetForm();
+              actions.setSubmitting(false);
+            })
+            .catch((error) => {
+              console.error('Error al enviar el email:', error);
+              toast({
+                title: "Error al enviar el mensaje.",
+                description: "Por favor, inténtalo de nuevo más tarde.",
+                status: "error",
+                duration: 5000,
+                isClosable: true,
+              });
+              actions.setSubmitting(false);
+            });
         }}
       >
         {formik => (
