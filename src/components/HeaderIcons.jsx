@@ -58,7 +58,7 @@ export default function HeaderIcons() {
           target='_blank'
           colorScheme='blue' 
           variant='outline'
-          href='https://www.linkedin.com/in/michelleperezs'
+          src='./CVMichellePérez.pdf'
         >
           Resume
         </Button>

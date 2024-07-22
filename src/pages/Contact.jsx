@@ -8,6 +8,7 @@ import {
   Textarea,
   VStack,
   FormErrorMessage,
+  useToast,
 } from '@chakra-ui/react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
@@ -15,8 +16,10 @@ import Headline from "../components/Headline";
 import TitlePages from "../components/TitlePages";
 
 export default function Contact() {
+  const toast = useToast();
+
   return (
-    <Box p={4} boxShadow="lg" borderRadius="md">
+    <Box p={4} boxShadow="lg" borderRadius="md" maxW="600px" mx="auto">
       <Headline title="Contact" />
       <TitlePages title="Let's Work Together" />
       <Formik
@@ -28,7 +31,14 @@ export default function Contact() {
           message: Yup.string().required('Required'),
         })}
         onSubmit={(values, actions) => {
-          console.log(values);
+          toast({
+            title: "Mensaje enviado correctamente.",
+            description: "Gracias por contactarme, me pondré en contacto contigo pronto.",
+            status: "success",
+            duration: 5000,
+            isClosable: true,
+          });
+          actions.resetForm();
           actions.setSubmitting(false);
         }}
       >
