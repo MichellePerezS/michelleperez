@@ -1,12 +1,13 @@
+// src/pages/Portfolio.js
 import React from 'react';
-import Headline from "../components/Headline";
 import { Box, Flex } from "@chakra-ui/react";
+import Headline from "../components/Headline";
 import TitlePages from "../components/TitlePages";
 import CardProjects from "../components/CardProjects";
 
 export default function Portfolio() {
   return (
-    <Box boxShadow="lg" borderRadius="md">
+    <Box boxShadow="lg" borderRadius="md" p={4}>
       <Headline title="Portfolio" />
       <TitlePages title="Check out my featured projects" />
       <Flex 
@@ -17,9 +18,9 @@ export default function Portfolio() {
       >
         <CardProjects
           source="./Portfolio.png"
-          reference="https://github.com/MichellePerezS/automataWeb"
+          reference="https://github.com/MichellePerezS/michelleperez"
           bd="ReactJS"
-          bd2="ChackraUI"
+          bd2="ChakraUI"
         />
         <CardProjects
           source="https://www.lineaverdeceutatrace.com/lv/consejos-ambientales/apps-ambientales/img/eco-apps.png"

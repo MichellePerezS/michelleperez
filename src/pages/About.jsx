@@ -1,13 +1,15 @@
+// src/pages/About.js
 import React from "react";
 import { Table, Tbody, Tr, Td, TableContainer, Heading, Box, Text, Grid, GridItem } from '@chakra-ui/react';
 import Headline from "../components/Headline";
-import TitlePages from "../components/TitlePages";
 
 export default function About() {
   return (
-    <Box boxShadow="lg" borderRadius="md">
+    <Box boxShadow="lg" borderRadius="md" p={4}>
       <Headline title="About Me" />
-      <Heading as='h4' pl={2} size='l' mt={5} fontFamily='subHeader'> Hi, I'm <Text as='span' color="accent">Michelle Pérez</Text> </Heading>
+      <Heading as='h4' pl={2} size='l' mt={5} fontFamily='subHeader'> 
+        Hi, I'm <Text as='span' color="accent">Michelle Pérez</Text> 
+      </Heading>
       <Heading as='h2' pl={2} size='xl' fontFamily="display">Junior Software Developer</Heading>
 
       <Heading p={2} mt={10} as="h4" color="accent" fontFamily="subHeader" size="md">Professional Profile</Heading>
@@ -51,8 +53,8 @@ export default function About() {
         gap={4}
       >
         <GridItem rowSpan={2} colSpan={1}>2021 - Present</GridItem>
-        <GridItem colSpan={1}> CODELEARN </GridItem>
-        <GridItem colSpan={3}>Programming Teacher(Python, Java, JavaScript</GridItem>
+        <GridItem colSpan={1}>CODELEARN</GridItem>
+        <GridItem colSpan={3}>Programming Teacher (Python, Java, JavaScript)</GridItem>
         <GridItem colSpan={4}>
           Teaching a diverse array of programming languages to students as they progress through their curricula has honed my ability to quickly adapt and master new languages.
           This experience has not only solidified my expertise in languages such as Python, Java, JavaScript, CSS, HTML, PHP, C++, and SQL, but has also equipped me with the skills to efficiently learn and teach any new language that comes my way.
@@ -75,7 +77,7 @@ export default function About() {
               <Td>Development of a mobile app integrated into the national documentation system for indigenous people and nationalities.</Td>
             </Tr>
             <Tr>
-              <Td>CONECTA CULTURAS</Td>
+              <Td>Hackea el COVID</Td>
               <Td>MEDIALAB, GIZ, AEI, ESQUEL</Td>
               <Td>Development of an online and offline educational platform with Raspberry PI.</Td>
             </Tr> 
