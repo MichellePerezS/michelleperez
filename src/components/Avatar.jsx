@@ -17,7 +17,7 @@ export default function Avatar() {
       left={{ base: '0', md: '0' }} 
       zIndex={2}
       mx={{ base: 'auto', md: '0' }} 
-      mt={{ base: 4, sm: 2, md: 0 }}  // margin-top es 2 para sm
+      mt={{ base: '0', md: '0' }}  
     >
       <CardHeader p={1}>
         <Flex alignItems='center'>
