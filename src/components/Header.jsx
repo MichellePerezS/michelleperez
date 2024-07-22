@@ -61,7 +61,7 @@ export default function Header() {
             target='_blank'
             colorScheme='blue' 
             variant='outline'
-            href='https://www.linkedin.com/in/michelleperezs'
+            src="./MichellePerez.pdf"
           >
             Resume
           </Button>
