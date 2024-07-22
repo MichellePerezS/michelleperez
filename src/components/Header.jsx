@@ -10,7 +10,7 @@ import {
   Link,
   Stack,
 } from '@chakra-ui/react';
-import { MoonIcon, SunIcon, EmailIcon } from '@chakra-ui/icons';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Link as RouterLink } from 'react-router-dom';
 import HeaderIcons from './HeaderIcons';
 
@@ -61,7 +61,7 @@ export default function Header() {
             target='_blank'
             colorScheme='blue' 
             variant='outline'
-            src="./MichellePerez.pdf"
+            href="./../../dist/MichellePérezS.pdf"
           >
             Resume
           </Button>
