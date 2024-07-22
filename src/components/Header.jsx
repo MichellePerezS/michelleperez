@@ -61,7 +61,7 @@ export default function Header() {
             target='_blank'
             colorScheme='blue' 
             variant='outline'
-            href="./MichellePérezS.pdf"
+            href="/dist/MichellePérezS.pdf"
           >
             Resume
           </Button>
