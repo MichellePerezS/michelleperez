@@ -58,7 +58,7 @@ export default function HeaderIcons() {
           target='_blank'
           colorScheme='blue' 
           variant='outline'
-          src='./CVMichellePérez.pdf'
+          href="/MichellePérezS.pdf"
         >
           Resume
         </Button>
