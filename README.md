@@ -2,8 +2,7 @@
 
 Este es un proyecto web desarrollado con React y Chakra UI. El proyecto tiene como objetivo mostrar el portafolio de Michelle Pérez, incluyendo su experiencia, educación y habilidades.
 
-![Example Image](<img width="1461" alt="Portfolio" src="https://github.com/user-attachments/assets/71f69a0a-fce3-42f6-89f5-2fec5d9ebd57">
-)
+[![Website](https://img.shields.io/badge/View_Website-000?style=for-the-badge&logo=vercel&logoColor=white)](https://michelle-perez.web.app/)
 
 ## Descripción
 
