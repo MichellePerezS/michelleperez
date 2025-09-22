@@ -1,3 +1,4 @@
+// src/main.jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
@@ -7,20 +8,15 @@ import {
   ColorModeScript
 } from '@chakra-ui/react';
 import { HelmetProvider } from 'react-helmet-async';
+import { HashRouter } from 'react-router-dom'; // 👈
 
 import '@fontsource/staatliches';
 import '@fontsource/yeseva-one';
 import '@fontsource-variable/comfortaa';
 
-// Tu tema + modo oscuro por defecto
 const theme = extendTheme({
-  config: {
-    initialColorMode: 'dark',   // 👈 oscuro por defecto
-    useSystemColorMode: false,  // ignora el modo del SO
-  },
-  colors: {
-    accent: '#f5a209',
-  },
+  config: { initialColorMode: 'dark', useSystemColorMode: false },
+  colors: { accent: '#f5a209' },
   fonts: {
     yesevaOne: `'Yeseva One', system-ui`,
     display: `'Staatliches', system-ui`,
@@ -33,7 +29,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <HelmetProvider>
       <ChakraProvider theme={theme}>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-        <App />
+        <HashRouter>        {/* 👈 sin basename */}
+          <App />
+        </HashRouter>
       </ChakraProvider>
     </HelmetProvider>
   </React.StrictMode>
