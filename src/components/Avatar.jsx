@@ -3,6 +3,9 @@ import { Card, CardBody, CardFooter, CardHeader, Box, Flex, Heading, Image, Stac
 import Icons from './Icons';
 import React from 'react';
 
+// helper opcional para assets en /public
+const asset = (p) => `${import.meta.env.BASE_URL}${p}`;
+
 export default function Avatar() {
   return (
     <Card
@@ -14,7 +17,7 @@ export default function Avatar() {
       <CardHeader p={3}>
         <Flex align="center" gap={3}>
           <Image
-            src="/mpT.png"           
+            src={asset('mpT.png')}
             alt="Logo personal de Michelle"
             boxSize={{ base: '56px', md: '100px' }}
           />
@@ -24,7 +27,7 @@ export default function Avatar() {
 
       <CardBody pt={0}>
         <Image
-          src="/michelleprofile.jpg" 
+          src={asset('michelleprofile.jpg')}
           alt="Foto de Michelle Pérez"
           borderRadius="md"
           objectFit="contain"
