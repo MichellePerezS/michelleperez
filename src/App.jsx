@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// src/App.jsx
+import { Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Layout from './components/Layout';
 import Portfolio from './pages/Portfolio';
@@ -7,22 +8,19 @@ import Blog from './pages/Blog';
 import Post from './pages/Post';
 
 function App() {
+  // NO metas BrowserRouter/HashRouter aquí: ya está en main.jsx
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* Blog */}
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<Post />} />
-
-          {/* (opcional) 404 simple */}
-          {/* <Route path="*" element={<About />} /> */}
-        </Routes>
-      </Layout>
-    </Router>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<Post />} />
+        {/* Fallback opcional */}
+        {/* <Route path="*" element={<About />} /> */}
+      </Routes>
+    </Layout>
   );
 }
 
