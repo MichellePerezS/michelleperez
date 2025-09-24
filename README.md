@@ -4,12 +4,12 @@ Este es un proyecto web desarrollado con React y Chakra UI. El proyecto tiene co
 
 ![Portfolio Screenshot](https://github.com/user-attachments/assets/71f69a0a-fce3-42f6-89f5-2fec5d9ebd57)
 
-## 🌟 Descripción
+## Descripción
 
 El sitio web incluye varias secciones como **About Me**, **Portfolio** y **Contact**.  
 Cada sección está diseñada para ser responsiva y fácil de usar en diferentes tamaños de pantalla.
 
-## 🛠 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **React** → Biblioteca de JavaScript para construir interfaces de usuario.  
 - **Chakra UI** → Biblioteca de componentes de UI para React.  
@@ -17,7 +17,7 @@ Cada sección está diseñada para ser responsiva y fácil de usar en diferentes
 - **Framer Motion** → Biblioteca para animaciones en React.  
 - **Vite** → Herramienta de construcción rápida para proyectos web.  
 
-## ⚙️ Configuración del Proyecto
+## Configuración del Proyecto
 
 ### Prerrequisitos
 
