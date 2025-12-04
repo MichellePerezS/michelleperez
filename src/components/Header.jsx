@@ -62,7 +62,7 @@ export default function Header() {
             rel="noopener noreferrer"
             colorScheme="blue"
             variant="outline"
-            href={`${base}MichellePerezS.pdf`} // en public/
+            href={`${base}MichellePerezCV.pdf`} // en public/
           >
             Resume
           </Button>

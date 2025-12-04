@@ -8,22 +8,16 @@ import CardProjects from "../components/CardProjects";
 export default function Portfolio() {
   const projects = [
     {
-      source: "/Portfolio.png",
-      reference: "https://github.com/MichellePerezS/michelleperez",
-      bd: "ReactJS",
-      bd2: "ChakraUI",
+      source: "/hospital_eda_preview.png", 
+      reference: "https://github.com/MichellePerezS/Hospital_Data_Gender_Analysis",
+      bd: "Python / Pandas",
+      bd2: "Data Science / HealthTech",
     },
     {
-      source: "/Portfolio.png",
-      reference: "https://github.com/MichellePerezS/automataWeb",
-      bd: "Automata",
-      bd2: "React",
-    },
-    {
-      source: "/Portfolio.png",
-      reference: "https://github.com/MichellePerezS",
-      bd: "Profile",
-      bd2: "GitHub",
+      source: "/mozartianos_preview.png", 
+      reference: "https://mozartianos.com/", 
+      bd: "SvelteKit / Vite",
+      bd2: "Deployment / Web",
     },
   ];
 
